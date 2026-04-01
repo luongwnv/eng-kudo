@@ -39,7 +39,6 @@ jobs:
           path: ./dist
 
   deploy:
-          if-no-files-found: ignore
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     environment:
       name: github-pages
